@@ -13,13 +13,13 @@ class Notifier
     /** @var array */
     protected $config;
 
-    /** @var \Illuminate\Contracts\Logging\Log */
+    /** @var Psr\Log\LoggerInterface */
     protected $log;
 
     protected $serverName;
 
     /**
-     * @param \Illuminate\Contracts\Logging\Log $log
+     * @param Psr\Log\LoggerInterface $log
      */
     public function __construct(LogContract $log)
     {
