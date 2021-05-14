@@ -7,11 +7,11 @@ use EricMakesStuff\ServerMonitor\Notifications\BaseSender;
 
 class Log extends BaseSender
 {
-    /** @var \Illuminate\Contracts\Logging\Log */
+    /** @var Psr\Log\LoggerInterface */
     protected $log;
 
     /**
-     * @param \Illuminate\Contracts\Logging\Log $log
+     * @param Psr\Log\LoggerInterface $log
      */
     public function __construct(LogContract $log)
     {
